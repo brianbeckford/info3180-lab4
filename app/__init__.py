@@ -1,5 +1,6 @@
 from flask import Flask
 
+
 # Config Values
 USERNAME = 'admin'
 PASSWORD = 'password123'
@@ -12,3 +13,4 @@ app = Flask(__name__)
 app.config.from_object(__name__)
 from app import views
 app.config['UPLOAD_FOLDER'] = './app/static/uploads'
+
