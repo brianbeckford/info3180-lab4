@@ -1,9 +1,11 @@
 {% extends 'base.html' %}
 {% block main %}
 
+<div class= "flexbox">
 {% for image in images: %}
     <div> <img src = "{{ url_for('static',filename= "uploads/" + image ) }}" height="200",width="200">  </img> </div>
     <br>
     {% endfor%}
 
+</div>
 {% endblock %}
